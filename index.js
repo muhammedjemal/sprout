@@ -199,8 +199,8 @@ const countrySelector = 'select#countrycode'; // Selector for the dropdown eleme
 await page.waitForSelector(countrySelector);
 
 // Select Singapore by value
-// const countryValue = 'sg'; // Value of Singapore in the dropdown // singapore
-const countryValue = 'nl'; // Value of Singapore in the dropdown // netherlands
+const countryValue = 'sg'; // Value of Singapore in the dropdown // singapore
+// const countryValue = 'nl'; // Value of Singapore in the dropdown // netherlands
 
 await page.select(countrySelector, countryValue);
 // await page.waitForTimeout(1000);

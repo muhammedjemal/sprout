@@ -62,7 +62,7 @@ app.listen(port, () => console.log(`App listening on port ${port}!`));
 
 
 
-const url = 'https://sproutgigs.com/signup.php';
+const url = 'https://whatismyipaddress.com';
 const urlChat = "https://chat.openai.com/c/a9a9ba83-78a3-4113-ae8c-9a703680a476";
 
 
@@ -154,6 +154,11 @@ await page.setViewport({ width: 1366, height: 768 });
   //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+  let bodyData = await page.evaluate(()=>{
+    return document.body.innerText;
+  })
+console.log(bodyData);
+return bodyData;
 
 //   ///////////// *************************////////////
 
